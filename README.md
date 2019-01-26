@@ -5,12 +5,12 @@ A Flutter library to connect to Meteor Servers.
 ## Getting Started
 
 #### Import Library
-```
+```Dart
 import 'package:ddp/ddp.dart';
 ```
 
 #### Initilize a client.
-```
+```Dart
 DdpClient client;
 
 _initMeteorClient() {
@@ -31,17 +31,17 @@ _initMeteorClient() {
 ```
 
 #### Initilize a collection
-```
+```Dart
 Collection collection;
 ```
 
 #### Method Call
-````
+````Dart
 client.call("babies.remove", [this.babiesNames[index]["_id"]]);
 ````
 
 #### findAll
-```
+```Dart
 collection.findAll()
   ..forEach((String _id, Map document) {
   document["_id"] = _id;
